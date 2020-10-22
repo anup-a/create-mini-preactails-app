@@ -1,0 +1,77 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\platform-tools;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\python37;C:\python37\scripts;C:\flutter\bin;C:\src\flutter\flutter\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Go\bin;C:\Program Files\nodejs\;C:\Users\Anup\scoop\shims;C:\Strawberry;C:\Python37\;C:\Modeltech_pe_edu_10.4a\win32pe_edu;C:\Program Files\JetBrains\WebStorm 2018.3.1\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Python37;C:\Python37\Scripts;C:\src\flutter\flutter\bin;C:\Users\Anup\AppData\Local\Microsoft\WindowsApps;C:\Program Files\qemu;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Anup\AppData\Local\bin\NASM;C:\Users\Anup\Desktop\OS\LIB\bin;C:\Strawberry\perl\bin;C:\Strawberry\perl;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Users\Anup\AppData\Local\Yarn\bin;C:\Program Files\Pandoc;C:\Users\Anup\node_modules\@angular\cli\bin;C:\Users\Anup;C:\Users\Anup\AppData\Local\.meteor;C:\Users\Anup\AppData\Local\hyper\app-3.0.2\resources\bin;C:\tools\dart-sdk\bin;C:\Users\Anup\AppData\Roaming\Pub\Cache\bin;C:\Program Files\Java\jdk-10.0.1\bin;C:\Program Files\Java\jre-10.0.2\bin;C:\Users\Anup\go\bin;C:\Program Files\PostgreSQL\12\bin;C:\Go\bin;C:\Users\Anup\AppData\Local\Microsoft\WindowsApps;C:\Users\Anup\AppData\Roaming\npm;C:\Users\Anup\AppData\Local\Yarn\Data\global\node_modules\.bin;
+
+Yarn version: 
+  1.19.2
+
+Node version: 
+  14.8.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+
+npm manifest: 
+  {
+    "name": "create-preact-tails-app",
+    "version": "1.0.0",
+    "description": "A svg based UI toolkits for gradients and shapes",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "npm run watch:css && webpack-dev-server --open --hot",
+      "build": "npm run build:css && webpack --mode production --devtool source-map",
+      "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
+      "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
+    },
+    "keywords": [
+      "Svg",
+      "Gradient",
+      "wave",
+      "shapes",
+      "UI"
+    ],
+    "author": "Anup Aglawe",
+    "license": "ISC",
+    "dependencies": {
+      "preact": "^10.5.4",
+      "react-color": "^2.18.1",
+      "react-toggle-dark-mode": "^1.0.2",
+      "save-svg-as-png": "^1.4.17",
+      "tailwind-percentage-heights-plugin": "^0.1.4"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.11.6",
+      "@babel/plugin-transform-react-jsx": "^7.10.4",
+      "@babel/preset-env": "^7.11.5",
+      "@babel/preset-react": "^7.10.4",
+      "autoprefixer": "^9.8.6",
+      "babel-loader": "^8.1.0",
+      "compression-webpack-plugin": "^6.0.3",
+      "css-loader": "^4.3.0",
+      "file-loader": "^6.1.0",
+      "html-webpack-plugin": "^4.5.0",
+      "mini-css-extract-plugin": "^0.11.3",
+      "optimize-css-assets-webpack-plugin": "^5.0.4",
+      "postcss-cli": "^8.0.0",
+      "postcss-loader": "^4.0.3",
+      "style-loader": "^1.3.0",
+      "tailwindcss": "^1.8.10",
+      "tailwindcss-dark-mode": "^1.1.6",
+      "webpack": "^4.44.2",
+      "webpack-cli": "^3.3.12",
+      "webpack-dev-server": "^3.11.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

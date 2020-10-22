@@ -1,9 +1,7 @@
 module.exports = {
   purge: {
     enabled: true,
-    content: [
-      './src/**/*.html', 
-    './src/**/*.jsx'],
+    content: ['./src/**/*.html', './src/**/*.jsx'],
   },
 
   theme: {
@@ -14,12 +12,16 @@ module.exports = {
         'darkish-black': '#0e141b',
       },
       width: {
-        '7/10' : '70%',
-        '3/10' : '30%',
+        '7/10': '70%',
+        '3/10': '30%',
+      },
+      height: {
+        '7/10': '70%',
+        '3/10': '30%',
       },
       screens: {
-        'xs' : '362px',
-      }
+        xs: '362px',
+      },
     },
     fontFamily: {
       sans: [
@@ -68,8 +70,5 @@ module.exports = {
     ],
     textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive'],
   },
-  plugins: [
-    require('tailwind-percentage-heights-plugin')(),
-    require('tailwindcss-dark-mode')(),
-  ],
+  plugins: [require('tailwindcss-dark-mode')()],
 }

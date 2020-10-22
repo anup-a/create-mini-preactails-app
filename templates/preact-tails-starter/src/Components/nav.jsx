@@ -1,9 +1,11 @@
 import { h } from 'preact'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
+import Github from './../assets/github.svg'
 
 function Navbar({ isDark, toggleDarkMode }) {
   return (
-    <div className="fixed z-20 flex items-center justify-between w-full h-16 bg-white shadow-lg dark:bg-darkish-black dark:text-white">
+    <div className="fixed z-20 flex items-center justify-between w-full h-16 bg-white shadow-md dark:bg-darkish-black dark:text-white">
+      <div>Preact - Tailwind Starter</div>
       <div className="flex items-center nav-item ">
         <img
           src={Github}
