@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bodhish/create-reason-react-tailwind.git"
+    "url": "git://github.com/anup-a/create-mini-preactails-app.git"
   },
   "author": "Anup Aglawe",
   "license": "MIT",
@@ -21,9 +21,9 @@
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/bodhish/create-reason-react-tailwind/issues"
+    "url": "https://github.com/anup-a/create-mini-preactails-app/issues"
   },
-  "homepage": "https://github.com/bodhish/create-reason-react-tailwind#readme",
+  "homepage": "https://github.com/anup-a/create-mini-preactails-app#readme",
   "dependencies": {
     "inquirer": "^7.2.0"
   },

@@ -3,16 +3,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const CHOICES = fs.readdirSync(`${__dirname}/templates`);
 const CURR_DIR = process.cwd();
 
 const QUESTIONS = [
-  {
-    name: "project-choice",
-    type: "list",
-    message: "What project template would you like to generate?",
-    choices: CHOICES
-  },
   {
     name: "project-name",
     type: "input",
@@ -26,7 +19,7 @@ const QUESTIONS = [
 ];
 
 inquirer.prompt(QUESTIONS).then(answers => {
-  const projectChoice = answers["project-choice"];
+  const projectChoice = "preact-tails-starter";
   const projectName = answers["project-name"];
   const templatePath = `${__dirname}/templates/${projectChoice}`;
 
