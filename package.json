@@ -1,0 +1,33 @@
+{
+  "name": "create-mini-preactails-app",
+  "version": "0.0.1",
+  "description": "A gzipped minified preact starter app with webpack and tailwind css",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bodhish/create-reason-react-tailwind.git"
+  },
+  "author": "Anup Aglawe",
+  "license": "MIT",
+  "keywords": [
+    "tailwind",
+    "webpack",
+    "preact",
+    "started"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/bodhish/create-reason-react-tailwind/issues"
+  },
+  "homepage": "https://github.com/bodhish/create-reason-react-tailwind#readme",
+  "dependencies": {
+    "inquirer": "^7.2.0"
+  },
+  "bin": {
+    "crra": "./index.js"
+  }
+}
