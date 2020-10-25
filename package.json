@@ -15,7 +15,8 @@
     "tailwind",
     "webpack",
     "preact",
-    "started"
+    "starter",
+    "boilerplate"
   ],
   "engines": {
     "node": ">=8"
