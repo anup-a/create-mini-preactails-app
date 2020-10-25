@@ -1,12 +1,8 @@
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CompressionPlugin = require('compression-webpack-plugin')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const webpack = require('webpack')
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.jsx',
   output: {
     path: path.join(__dirname, '/dist'),
@@ -65,13 +61,5 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: './src/index.html',
     }),
-    new webpack.DefinePlugin({
-      // <-- key to reducing React's size
-      'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-      },
-    }),
-    new CompressionPlugin(),
-    new OptimizeCSSAssetsPlugin({}),
   ],
 }

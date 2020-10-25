@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run watch:css && webpack-dev-server --open --hot",
-    "build": "npm run build:css && webpack --mode production --devtool source-map",
+    "start": "npm run watch:css && webpack-dev-server --config webpack.dev.js --open --hot",
+    "build": "set NODE_ENV=production&& npm run build:css && webpack --mode=production --devtool source-map --config webpack.prod.js",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
   },
@@ -46,6 +46,7 @@
     "tailwindcss-dark-mode": "^1.1.6",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
   }
 }
