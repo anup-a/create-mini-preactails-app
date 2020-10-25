@@ -29,6 +29,6 @@
     "inquirer": "^7.2.0"
   },
   "bin": {
-    "crra": "./index.js"
+    "create-mini-preact-app": "./index.js"
   }
 }
