@@ -1,6 +1,6 @@
 {
   "name": "create-mini-preact-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A gzipped minified preact starter app with webpack and tailwind css",
   "scripts": {
     "start": "node index.js"
